@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+.welcome-screen {
+  color: #926239;
+  text-align: center;
+  min-height: 100vh;
+  background-color: white;
+  background-image: url("/assets/image/beach.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading {
+  font-size: 50px;
+  padding-top: 40vh;
+  margin: 0px;
+}
+.greeting {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+.btn {
+  padding: 12px 20px;
+  border: 1px solid #926239;
+  color: inherit;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #926239;
+  color: white;
+}
+.content {
+  vertical-align: center;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5em;
+  color: #926239;
+  background-color: #f4f4f4;
+}
+.block {
+  display: inline-block;
+  color: #926239;
+  width: 33.3333%;
+  padding: 20px;
+  height: auto;
+}
+.back-block {
+  color: white;
+  background-color: #926239;
+}
