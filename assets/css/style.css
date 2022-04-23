@@ -1,56 +1,82 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
 body {
-  font-family: sans-serif;
-  margin: 0px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 17px;
 }
+
+:root {
+  --first-color: #926239;
+  --second-color: #ffffff;
+}
+
 .welcome-screen {
-  color: #926239;
-  text-align: center;
-  min-height: 100vh;
-  background-color: white;
-  background-image: url("/assets/image/beach.jpg");
+  background-image: url("./../image/beach.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
 }
+
 .heading {
+  line-height: 1.2;
   font-size: 50px;
-  padding-top: 40vh;
-  margin: 0px;
 }
+
 .greeting {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
-.btn {
-  padding: 12px 20px;
-  border: 1px solid #926239;
-  color: inherit;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.btn:hover {
-  background-color: #926239;
-  color: white;
-}
-.content {
-  vertical-align: center;
-  padding: 20px;
-  text-align: center;
-  line-height: 1.5em;
-  color: #926239;
-  background-color: #f4f4f4;
-}
-.block {
+
+.button-read-more {
+  border: 1px solid var(--first-color);
   display: inline-block;
-  color: #926239;
-  width: 33.3333%;
-  padding: 20px;
-  height: auto;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: inherit;
 }
-.back-block {
-  color: white;
-  background-color: #926239;
+
+.button-read-more:hover,
+.first-content,
+.small-content-wrapper > .small-content:nth-child(odd) {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.welcome-screen,
+.first-content,
+.second-content {
+  text-align: center;
+}
+
+.second-content {
+  background-color: #f4f4f4;
+  color: var(--first-color);
+}
+
+.small-content-wrapper {
+  display: flex;
+}
+
+.first-content,
+.second-content,
+.small-content-wrapper > .small-content:nth-child(even),
+.small-content-wrapper > .small-content:nth-child(odd) {
+  padding: 20px;
+}
+
+.welcome-screen,
+.small-content-wrapper > .small-content:nth-child(even) {
+  background-color: var(--second-color);
+  color: var(--first-color);
 }
