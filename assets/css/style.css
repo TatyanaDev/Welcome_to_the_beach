@@ -72,7 +72,7 @@ body {
 .second-content,
 .small-content-wrapper > .small-content:nth-child(even),
 .small-content-wrapper > .small-content:nth-child(odd) {
-  padding: 20px;
+  padding: 18px;
 }
 
 .welcome-screen,
